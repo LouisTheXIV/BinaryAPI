@@ -2,6 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def main():
     return "why are you here"
@@ -14,4 +15,4 @@ def convert(word):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='localhost', port=8000)
